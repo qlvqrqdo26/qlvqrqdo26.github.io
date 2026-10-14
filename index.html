@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alvarado Sánchez</title>
+  <meta name="description" content="Sitio personal de Alvarado Sánchez: proyectos, blog y más.">
+  <meta name="theme-color" content="#7a1f3d">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alvarado Sánchez">
+  <meta property="og:description" content="Sitio personal de Alvarado Sánchez: proyectos, blog y más.">
+  <meta property="og:url" content="https://qlvqrqdo.art/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <a class="profile" href="#home" aria-label="Ir al inicio">
+        <span class="avatar" aria-hidden="true">AS</span>
+        <span class="who">
+          <strong>Alvarado Sánchez</strong>
+          <small>Analista TI</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <a href="#home" data-route="home">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>
+          <span>Home</span>
+        </a>
+        <a href="#about" data-route="about">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+          <span>About</span>
+        </a>
+        <a href="#projects" data-route="projects">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/></svg>
+          <span>Projects</span>
+        </a>
+        <a href="#blog" data-route="blog">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4c-8 0-14 4-14 11v5"/><path d="M6 20c0-5 3-8 8-9"/><path d="M14 11c3 0 6-2 6-7"/></svg>
+          <span>Blog</span>
+        </a>
+      </nav>
+
+      <div class="recent">
+        <h4>Proyectos recientes</h4>
+        <ul>
+          <li><span class="thumb" aria-hidden="true"></span><span><b>Tu primer proyecto</b><small>Próximamente</small></span></li>
+          <li><span class="thumb" aria-hidden="true"></span><span><b>Tu segundo proyecto</b><small>Próximamente</small></span></li>
+          <li><span class="thumb" aria-hidden="true"></span><span><b>Tu tercer proyecto</b><small>Próximamente</small></span></li>
+        </ul>
+      </div>
+
+      <div class="side-foot">
+        <p>qlvqrqdo.art</p>
+      </div>
+    </aside>
+
+    <main>
+
+      <section id="home" class="view">
+        <div class="hero">
+          <p class="hello">Hola, soy</p>
+          <h1 class="name">Alvarado Sánchez.</h1>
+          <p class="tagline">Analista TI. Construyo cosas útiles con tecnología.</p>
+        </div>
+        <svg class="art" viewBox="0 0 900 600" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#e9e9ec" stop-opacity="0"/>
+              <stop offset="1" stop-color="#e9e9ec" stop-opacity=".9"/>
+            </linearGradient>
+          </defs>
+          <circle cx="690" cy="170" r="130" fill="none" stroke="#cfcfd4" stroke-width="1.5"/>
+          <circle cx="690" cy="170" r="92" fill="none" stroke="#dcdce0" stroke-width="1.5"/>
+          <circle cx="690" cy="170" r="54" fill="#f1e6ea" stroke="#7a1f3d" stroke-opacity=".35" stroke-width="1.5"/>
+          <path d="M0 470 C 260 520, 520 360, 900 300 L900 600 L0 600 Z" fill="url(#fade)"/>
+          <path d="M0 470 C 260 520, 520 360, 900 300" fill="none" stroke="#7a1f3d" stroke-opacity=".55" stroke-width="1.5"/>
+        </svg>
+      </section>
+
+      <section id="about" class="view">
+        <div class="page">
+          <h2>About</h2>
+          <p class="lead">Soy Alvarado Sánchez, analista de TI.</p>
+          <p>Trabajo con redes, automatización y herramientas que simplifican el día a día. Me gusta construir las cosas desde cero, entender cómo funcionan y dejarlas sencillas de mantener.</p>
+          <p>Este sitio es mi espacio para compartir lo que voy haciendo y aprendiendo.</p>
+        </div>
+      </section>
+
+      <section id="projects" class="view">
+        <div class="page wide">
+          <h2>Projects</h2>
+          <p class="lead">Lo que estoy construyendo.</p>
+          <div class="cards">
+            <article class="card placeholder">
+              <h3>Próximamente</h3>
+              <p>Aquí aparecerá tu primer proyecto.</p>
+            </article>
+            <article class="card placeholder">
+              <h3>Próximamente</h3>
+              <p>Aquí aparecerá tu segundo proyecto.</p>
+            </article>
+            <article class="card placeholder">
+              <h3>Próximamente</h3>
+              <p>Aquí aparecerá tu tercer proyecto.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="view">
+        <div class="page">
+          <h2>Blog</h2>
+          <p class="lead">Notas, ideas y tutoriales.</p>
+          <div class="empty">
+            <p>Todavía no hay artículos. El primero llegará pronto.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
