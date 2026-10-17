@@ -186,6 +186,16 @@ main { flex: 1; position: relative; overflow: hidden; min-width: 0; }
 .card h3 { font-family: var(--serif); font-size: 20px; color: var(--g900); margin-bottom: 6px; }
 .card p { font-size: 14px; color: var(--g500); }
 
+/* Apps (tarjetas que abren cada aplicación) */
+.app-card { display: flex; flex-direction: column; transition: border-color .15s, transform .15s; }
+.app-card:hover { border-color: var(--wine); transform: translateY(-2px); }
+.app-icon, .recent img.thumb { object-fit: contain; background: #f4f1ea; border-radius: 10px; }
+.app-icon { width: 48px; height: 48px; padding: 6px; margin-bottom: 14px; }
+.recent img.thumb { padding: 5px; }
+.app-card .go { margin-top: auto; padding-top: 14px; font-size: 13px; font-weight: 600; color: var(--wine); }
+.recent a { display: flex; align-items: center; gap: 14px; border-radius: 10px; }
+.recent a:hover b { color: var(--wine); }
+
 .empty {
   margin-top: 28px;
   padding: 36px 24px;
