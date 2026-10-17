@@ -5,10 +5,11 @@
   --g900: #26262a;
   --g700: #4f4f55;
   --g500: #85858c;
-  --g300: #d4d4d8;
-  --g200: #e6e6e9;
-  --g100: #f3f3f4;
-  --bg: #fbfafa;
+  --g300: #d6cfc0;
+  --g200: #e4ddcf;
+  --g100: #ede7db;
+  --bg: #f5f1e8;
+  --card-bg: #fbf9f4;
   --sidebar-w: 300px;
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -178,7 +179,7 @@ main { flex: 1; position: relative; overflow: hidden; min-width: 0; }
 .card {
   padding: 22px;
   border-radius: 14px;
-  background: #fff;
+  background: var(--card-bg);
   border: 1px solid var(--g200);
 }
 
@@ -189,9 +190,10 @@ main { flex: 1; position: relative; overflow: hidden; min-width: 0; }
 /* Apps (tarjetas que abren cada aplicación) */
 .app-card { display: flex; flex-direction: column; transition: border-color .15s, transform .15s; }
 .app-card:hover { border-color: var(--wine); transform: translateY(-2px); }
-.app-icon, .recent img.thumb { object-fit: contain; background: #f4f1ea; border-radius: 10px; }
-.app-icon { width: 48px; height: 48px; padding: 6px; margin-bottom: 14px; }
-.recent img.thumb { padding: 5px; }
+/* Logos en PNG transparente, sin recuadro */
+.app-icon, .recent img.thumb { object-fit: contain; background: none; border: 0; border-radius: 0; }
+.app-icon { width: 52px; height: 52px; margin-bottom: 16px; }
+.recent img.thumb { width: 34px; height: 34px; margin: 0 4px; }
 .app-card .go { margin-top: auto; padding-top: 14px; font-size: 13px; font-weight: 600; color: var(--wine); }
 .recent a { display: flex; align-items: center; gap: 14px; border-radius: 10px; }
 .recent a:hover b { color: var(--wine); }
